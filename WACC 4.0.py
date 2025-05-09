@@ -17,13 +17,12 @@ logo_base64 = get_base64_image("logo.png.png")
 st.markdown(
     f"""
     <div style="display: flex; align-items: center; gap: 15px;">
-        <img src="data:image/png;base64,{logo_base64}" alt="Logo" width="45">
+        <img src="data:image/png;base64,{logo_base64}" alt="Logo" width="60">
         <h1 style="margin: 0;">Simulador de WACC com Monte Carlo</h1>
     </div>
     """,
     unsafe_allow_html=True)
 
-st.title("📈 Simulador de WACC com Monte Carlo")
 st.markdown("### Qual percentil usar e quando?")
 
 # Tabela simples com markdown puro do Streamlit
