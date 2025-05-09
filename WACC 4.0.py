@@ -9,8 +9,8 @@ st.set_page_config(page_title="Simulador de WACC", layout="centered")
 st.title("📈 Simulador de WACC com Monte Carlo")
 st.markdown("Work in progress, desculpas pelo inconveniente.")
 
-file_path = os.path.expanduser(r'~\\OneDrive - Eagle Consultoria Econômica e de Engenharia\\Projetos\\ECP04 - Gestão do conhecimento\\2. Economia\\WACC\\inputs wacc 3.0.xlsx')
-# file_path = 'inputs wacc 3.0.xlsx'
+#file_path = os.path.expanduser(r'~\\OneDrive - Eagle Consultoria Econômica e de Engenharia\\Projetos\\ECP04 - Gestão do conhecimento\\2. Economia\\WACC\\inputs wacc 3.0.xlsx')
+file_path = 'inputs wacc 3.0.xlsx'
 
 # Input
 try:
@@ -76,17 +76,6 @@ if st.button("Calcular WACC"):
         st.success(f"📌 Média do WACC Nominal: {np.mean(wacc_nominal):.4f}")
         st.info(f"📌 Mediana do WACC Real: {mediana:.4f}")
         st.warning(f"📌 WACC Real no percentil {percentil_desejado}%: {percentil_valor:.4f}")
-
-       # fig, ax = plt.subplots()
-       # ax.hist(wacc_real, bins=50, color='skyblue', edgecolor='black', alpha=0.7)
-       # ax.axvline(media, color='red', linestyle='--', label=f"Média: {media:.4f}")
-       # ax.axvline(mediana, color='green', linestyle='--', label=f"Mediana: {mediana:.4f}")
-       # ax.axvline(percentil_valor, color='orange', linestyle='--', label=f"Percentil {percentil_desejado}: {percentil_valor:.4f}")
-       # ax.set_title(f"Distribuição do WACC Real - {chosen_sector}")
-       # ax.set_xlabel("WACC Real")
-       # ax.set_ylabel("Frequência")
-       # ax.legend()
-       # st.pyplot(fig)
 
         plt.style.use('default')
         sns.set_style("dark", {"axes.facecolor": "#2c2c2e"})  # cinza escuro para fundo dos eixos
