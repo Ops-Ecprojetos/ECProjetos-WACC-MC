@@ -13,7 +13,7 @@ st.markdown("### Qual percentil usar e quando?")
 st.markdown("""
 | Situação                                                                 | Percentil recomendado  |
 |--------------------------------------------------------------------------|------------------------|
-| Ambiente regulatório **estável e maduro** (baixo risco)                 | **50%** (média)         |
+| Ambiente regulatório **estável e maduro** (baixo risco)                 | **50%**         |
 | Concessões **brownfield** (ativos já existentes, com risco menor)       | **50% a 69%**           |
 | Concessões **greenfield** (ativos novos, com mais risco)                | **69% ou até 84%**      |
 | Ambiente **regulatório instável** ou de **alta volatilidade econômica** | **84%**                 |
