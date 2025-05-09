@@ -7,7 +7,7 @@ import seaborn as sns
 
 st.set_page_config(page_title="Simulador de WACC", layout="centered")
 st.title("📈 Simulador de WACC com Monte Carlo")
-st.markdown("📈 Qual percentil usar e quando?
+st.markdown("Qual percentil usar e quando?
 Situação	Percentil recomendado	Justificativa
 Ambiente regulatório estável e maduro (baixo risco)	50% (média)	O risco de erro é pequeno, então usar a média é suficiente.
 Concessões brownfield (ativos já existentes, com risco menor)	50% a 69%	O risco de subestimar o WACC é moderado.
