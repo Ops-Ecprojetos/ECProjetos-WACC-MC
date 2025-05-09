@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import base64
 
 st.set_page_config(page_title="Simulador de WACC", layout="centered")
 st.title("📈 Simulador de WACC com Monte Carlo")
