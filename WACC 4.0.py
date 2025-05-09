@@ -16,7 +16,7 @@ logo_base64 = get_base64_image("logo.png.png")
 
 st.markdown(
     f"""
-    <div style="display: flex; align-items: center; gap: 05px;">
+    <div style="display: flex; align-items: center; gap: 00px;">
         <img src="data:image/png;base64,{logo_base64}" alt="Logo" width="150">
         <h1 style="margin: 0;">Simulador de WACC com Monte Carlo</h1>
     </div>
