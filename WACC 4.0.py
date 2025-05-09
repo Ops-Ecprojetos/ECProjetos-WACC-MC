@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
 
-st.set_page_config(page_title="Simulador de WACC", layout="left")
+st.set_page_config(page_title="Simulador de WACC", layout="wide")
 def get_base64_image(path):
     with open(path, "rb") as f:
         data = f.read()
