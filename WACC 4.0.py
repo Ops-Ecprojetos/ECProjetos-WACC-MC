@@ -7,7 +7,7 @@ import seaborn as sns
 
 st.set_page_config(page_title="Simulador de WACC", layout="centered")
 st.title("📈 Simulador de WACC com Monte Carlo")
-st.markdown("### 📈 Qual percentil usar e quando?")
+st.markdown("### Qual percentil usar e quando?")
 
 # Tabela simples com markdown puro do Streamlit
 st.markdown("""
