@@ -7,7 +7,6 @@ import seaborn as sns
 
 st.set_page_config(page_title="Simulador de WACC", layout="centered")
 st.title("📈 Simulador de WACC com Monte Carlo")
-st.markdown()
             
 #file_path = os.path.expanduser(r'~\\OneDrive - Eagle Consultoria Econômica e de Engenharia\\Projetos\\ECP04 - Gestão do conhecimento\\2. Economia\\WACC\\inputs wacc 3.0.xlsx')
 file_path = 'inputs wacc 3.0.xlsx'
