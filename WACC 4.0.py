@@ -72,7 +72,7 @@ if st.button("Calcular WACC"):
         percentil_valor = np.percentile(wacc_real, percentil_desejado)
         
         # Resultados principais
-        st.success(f"📌 Média do WACC Real: {media:.4f}")
+        st.success(f"📌 Média do WACC Real: {media*100:.2f}%")
         st.success(f"📌 Média do WACC Nominal: {np.mean(wacc_nominal):.4f}")
         st.info(f"📌 Mediana do WACC Real: {mediana:.4f}")
         st.warning(f"📌 WACC Real no percentil {percentil_desejado}%: {percentil_valor:.4f}")
@@ -97,10 +97,13 @@ if st.button("Calcular WACC"):
             linewidth=2.5,
             ax=ax
         )
+        ax.axvline(media, color='red', linestyle='--', linewidth=2, label=f"Média: {media*100:.2f}%")
+        ax.axvline(mediana, color='limegreen', linestyle='--', linewidth=2, label=f"Mediana: {mediana*100:.2f}%")
+        ax.axvline(percentil_valor, color='gold', linestyle='--', linewidth=2, label=f"Percentil {percentil_desejado}%: {percentil_valor*100:.2f}%")
 
-        ax.axvline(media, color='red', linestyle='--', linewidth=2, label=f"Média: {media:.4f}")
-        ax.axvline(mediana, color='limegreen', linestyle='--', linewidth=2, label=f"Mediana: {mediana:.4f}")
-        ax.axvline(percentil_valor, color='gold', linestyle='--', linewidth=2, label=f"Percentil {percentil_desejado}%: {percentil_valor:.4f}")
+        #ax.axvline(media, color='red', linestyle='--', linewidth=2, label=f"Média: {media:.4f}")
+        #ax.axvline(mediana, color='limegreen', linestyle='--', linewidth=2, label=f"Mediana: {mediana:.4f}")
+        #ax.axvline(percentil_valor, color='gold', linestyle='--', linewidth=2, label=f"Percentil {percentil_desejado}%: {percentil_valor:.4f}")
 
         ax.set_title(f"Distribuição Simulada do WACC Real – {chosen_sector}", fontsize=14, weight='bold', color='white')
         ax.set_xlabel("WACC Real", fontsize=12, color='white')
