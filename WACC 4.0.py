@@ -11,13 +11,13 @@ st.markdown("### Qual percentil usar e quando?")
 
 # Tabela simples com markdown puro do Streamlit
 st.markdown("""
-| Situação                                                                 | Percentil recomendado | Justificativa                                                                 |
+| Situação                                                                 | Percentil recomendado  |
 |--------------------------------------------------------------------------|------------------------|--------------------------------------------------------------------------------|
-| Ambiente regulatório **estável e maduro** (baixo risco)                 | **50%** (média)        | O risco de erro é pequeno, então usar a média é suficiente.                   |
-| Concessões **brownfield** (ativos já existentes, com risco menor)       | **50% a 69%**          | O risco de subestimar o WACC é moderado.                                      |
-| Concessões **greenfield** (ativos novos, com mais risco)                | **69% ou até 84%**     | Há mais incertezas: risco de obra, demanda, atrasos, etc.                     |
-| Ambiente **regulatório instável** ou de **alta volatilidade econômica** | **84%**                | Adoção de valor conservador para estimular investimentos.                     |
-| Projetos de **altíssimo CAPEX** (portos, aeroportos grandes etc.)       | **69% a 84%**          | Alta sensibilidade a subinvestimento, exige margem de segurança no WACC.     |
+| Ambiente regulatório **estável e maduro** (baixo risco)                 | **50%** (média)         |
+| Concessões **brownfield** (ativos já existentes, com risco menor)       | **50% a 69%**           |
+| Concessões **greenfield** (ativos novos, com mais risco)                | **69% ou até 84%**      |
+| Ambiente **regulatório instável** ou de **alta volatilidade econômica** | **84%**                 |
+| Projetos de **altíssimo CAPEX** (portos, aeroportos grandes etc.)       | **69% a 84%**           |
 """)            
 #file_path = os.path.expanduser(r'~\\OneDrive - Eagle Consultoria Econômica e de Engenharia\\Projetos\\ECP04 - Gestão do conhecimento\\2. Economia\\WACC\\inputs wacc 3.0.xlsx')
 file_path = 'inputs wacc 3.0.xlsx'
