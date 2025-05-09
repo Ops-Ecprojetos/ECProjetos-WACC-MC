@@ -21,7 +21,7 @@ st.markdown(
         <h1 style="margin: 0;">Simulador de WACC com Monte Carlo</h1>
     </div>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True)
 
 st.title("📈 Simulador de WACC com Monte Carlo")
 st.markdown("### Qual percentil usar e quando?")
