@@ -73,9 +73,9 @@ if st.button("Calcular WACC"):
         
         # Resultados principais
         st.success(f"📌 Média do WACC Real: {media*100:.2f}%")
-        st.success(f"📌 Média do WACC Nominal: {np.mean(wacc_nominal):.4f}")
-        st.info(f"📌 Mediana do WACC Real: {mediana:.4f}")
-        st.warning(f"📌 WACC Real no percentil {percentil_desejado}%: {percentil_valor:.4f}")
+        st.success(f"📌 Média do WACC Nominal: {np.mean(wacc_nominal)*100:.2f}%")
+        st.info(f"📌 Mediana do WACC Real: {mediana*100:.2f}%")
+        st.warning(f"📌 WACC Real no percentil {percentil_desejado}%: {percentil_valor*100:.2f}%")
 
         plt.style.use('default')
         sns.set_style("dark", {"axes.facecolor": "#2c2c2e"})  # cinza escuro para fundo dos eixos
